@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="fa">
-    <head>
-        <title>رزومه رزومه حرفه ای من</title>
+<html lang="fa" dir="rtl">
+<head>
     <meta charset="UTF-8">
-    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css"rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه حرفه‌ای امیرعلی</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-<h1>سلام، من امیرعلی هستم!</h1>
-    <p>!این اولین پروژه وب من است</p>
-<script src="script.js"></script>
-<header>
-    <img src="images/photo.jpg" alt="عکس پروفایل " class="profile-img">
-    <h1>Amirali</h1>
-<p>توسعه‌دهنده وب Frontend</p>
-</header>
-<section class="skills">
-    <h2>مهارت‌ها</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Reactدرحال یادگیری </li>
-    </ul>
-</section>
-<section class="projects">
-<h2>پروژه های من</h2>
-<div class="project-card">
-    <h2>رزومه آنلاین</h2>
-    <p>اولین پروژه من با HTML/CSS/JS</p>
-    <a href="#" class="demo-btn">دمو</a>
-</div>
-</section>
-<section class="contact">
-    <h2>تماس با من</h2>
-    <p>ایمیل:am7340220@gmail.com</p>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#projects">پروژه‌ها</a></li>
+            <li><a href="#about">درباره من</a></li>
+        </ul>
+        <button id="theme-toggle">حالت تاریک</button>
+    </nav>
+
+    <header>
+        <img src="images/photo.jpg" alt="عکس پروفایل" class="profile-img">
+        <h1>سلام، من امیرعلی هستم!</h1>
+        <p>توسعه‌دهنده Frontend</p>
+        <p>این اولین پروژه وب من است!</p>
+    </header>
+
+    <section id="skills" class="section">
+        <h2>مهارت‌ها</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React (در حال یادگیری)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>پروژه‌های من</h2>
+        <div class="project-card">
+            <h3>رزومه آنلاین</h3>
+            <p>اولین پروژه من با HTML/CSS/JS</p>
+            <a href="#" class="demo-btn">دمو</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+    <h2>راه‌های ارتباطی</h2>
+    <p>ایمیل: am7340220@gmail.com</p>
+    
     <div class="social-links">
-        <a href="#"><img src="icons/github.png"alt="github"></a>
-        <a href="#"><img src="icons/linkedin.png"alt="linkedin"></a>
+        <a href="#"><img src="icons/github.png" alt="GitHub"></a>
+        <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
     </div>
+
+    <h3>فرم تماس</h3>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">نام شما:</label>
+            <input type="text" id="name" name="name" placeholder="نام کامل" required autocomplete="name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">ایمیل شما:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">پیام شما:</label>
+            <textarea id="message" name="message" placeholder="متن پیام خود را بنویسید..." required></textarea>
+        </div>
+        
+        <button type="submit">ارسال</button>
+    </form>
+</section>
+
+    <script src="script.js"></script>
 </body>
 </html>
